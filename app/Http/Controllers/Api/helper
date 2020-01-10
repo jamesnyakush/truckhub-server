@@ -1,0 +1,14 @@
+    // public function test()
+    // {
+    //     $username = config('services.sms_client.username');
+    //     $apiKey = config('services.sms_client.secret');
+         
+    //     $AT       = new AfricasTalking($username, $apiKey);
+    //     $sms      = $AT->sms();
+
+    //     $result   = $sms->send([
+    //         'to'      => '+254746445198',
+    //         'message' => 'Hello World!'
+    //     ]);
+
+    // }

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "truckhub-ad596",
+  "private_key_id": "79b22dc78fb3222c2b1f1c998d57e010624ad721",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCy9EC1o+ux6tKn\nVMc2DkdzNLIVe5CJ1ulEWOifN2t0tCwOLlo8ay82e7X8WQ2Gm3brxaFrywxJsKct\nAwBBStK8uePE5DmsCoqzbi8ZXREwYCXc8VYo7K9EAj83uPsjECqbW71DfM4qpsof\net/mg9sK3UjMDHyOR9y3C+MivZpNI2d1Ut7cnZCL6UKJpmRpVSB/58Fs8Vapdy1t\n6xSzHQ33BL9yJGeAQEs/6JMS4BOx3Qm8dLfZfLEGsYBkL54MDxFm+cJV8S0PbExN\n0snsTXZNDjfstbVRllMezWiaD96hhqL9J/dU6R7SxE+2mFSy31EY0glSDZgnFdVv\nPLjhZIAxAgMBAAECggEAAS+6YBnqnZ7bb62RtouIsLxYM+lCT4+js0bNoASbi0YI\nhr2K7pydTwSp87bZbpuIQc7pH5BUkAaCTTuYXFZ1KDgpSOxkb34QZlkkKcxiqUnx\n5lGZSyMqlE5ZgfKRg61/QtFsY06oBUNe0q+bXWlhYeSOr3+jscPLNFF5W4kbRUik\nduvYuQq6iUTP6qJezCwosA3iLn3CyRC0IwSEmRRs6OJz+AI+LCVAwUbZyU46HSm/\nfcM6nsvudOGpjN8l6YH8Mg8oPCNNccfr7nCzBez+yMaC6AiBKP1T/WjCIxLDFjMJ\nx21DlPITBDhJuvib55EIgtS3Qjm1LoLU+dJ/MNgl2QKBgQDhaTHWELvqQRg199rx\npmdxha9bAjvu/4OxCqJ3IaKApu6jsjvbK4/71nOr77qhnC32YYq0dLo7hUh5ust8\nqCwPSPzLG+IevWtjyKRuZ0m32b3OC2onQayvMhKFXOqIvVvk2pBk9/0TyLJ22wYZ\n7aVC0oprRHozLSwnjC40cpxX3QKBgQDLPSR8DCGHp/8w1fiPmy8qSSD9BuBAlezi\nxnhFbYZXg7iDw1GcTfUCNiKst1FjIBNwu//hy4qhze8a9+4gaiI5xNBPIsOXjQAx\nqQtSm6/0ylbJmJViK+fiiGw0WcfbEcFKrQZVQlEcPzYcdggjsFjxMKQQ+nJ0de2E\nQjnQh+rOZQKBgG5mOTRg6chnrVXxWNh16cAd+66VP4lkt7kkPkIexRpBqCughdRo\nV5K+i9SwCzZP6er8BxUu/m9cbgzAwh0BuOKbmsRXmb34g/pRMMep6t8S0/VwfcNQ\nVSVRXuTWh0AFjlZd/c6V7uubply0FR7p18EMoSK8XSVngHK2I4Mohw45AoGAEn32\nst67skcj3gKqAg8BpJxQxxT4FIhPrHaYfOCxR4cxo7OC2nDxaQkZ8JMhcZ56hlhk\nuNu3Om+tYMvMO+DMSmtQ9NJZ75EhwmL6J8MIqII8kU0z0mHiUGdPSRgeKh2cc7n4\niItnK+XIe6B1ryGdhhyB4RWYkmYkfVM1RXcIc00CgYA+EbMcYwCRRKCbFVpS3pk9\nrDEl//oYgvmE7M3SbiE7WfIqP1y9q/Y0SZtpjYd+g0t/yHLm0nj7jWxyxcujZYWK\n/reS4+GHNgUEM5bIco5aEimnoq32QfBvun/0KnILMj9UUJXxmVhpmxRBT+IlyZeJ\nD0XwPrLlSUFnvWPC7L6Mag==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-kyanb@truckhub-ad596.iam.gserviceaccount.com",
+  "client_id": "108123064498401936190",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-kyanb%40truckhub-ad596.iam.gserviceaccount.com"
+}
