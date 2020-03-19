@@ -6,7 +6,24 @@ Truckhub Backend is a fully featured Api.
 ## Api Endpoints
 | Endpoint | Method | Status |
 | :------: |:------:|:------:|
-| /register-url | Get | Used to register Urls |
+| /api/v1/auth/login | Post | Used to authanticate a user |
+| /api/v1/auth/signup | Post | Used to register a new user |
+| /api/v1/auth/logout | Get | Used to logout a user|
+| /api/payment/register-url | Get | Used to register Urls Mpesa |
+| /api/payment/validate | Any | Used to validate Mpesa transaction|
+| /api/payment/confirm | Any | Used to confirm Mpesa transaction |
+| /api/v1/bookings | Get | Used to display a list of bookings |
+| /api/v1/bookings/{booking} | Get | Used to display a booking with id |
+| /api/v1/bookings | Post | Used to Add new Booking |
+| /api/v1/bookings/{booking} | Put | Used to update a booking |
+| /api/v1/bookings/{id} | Delete | Used to Delete  a booking by id|
+| /api/v1/trucks | Get | Used to get a list of trucks |
+| /api/v1/trucks/{id} | Get | Used to Get a truck by id |
+| /api/v1/trucks | Post | Used to add new truck |
+| /api/v1/trucks/{id} | Put | Used to Updated a truck by id |
+| /api/v1/trucks/{id} | Delete | Used to delete a truck by id |
+
+
 
 ## Tools used
 
