@@ -1,5 +1,7 @@
 # TruckHub Backend :truck:
 
+[![codebeat badge](https://codebeat.co/badges/7db3ee88-7c8a-43ed-bc45-1cd85da940a9)](https://codebeat.co/projects/github-com-jamesnyakush-truckhub-server-master)  [![Maintainability](https://api.codeclimate.com/v1/badges/4e1e8537f40353706e46/maintainability)](https://codeclimate.com/github/jamesnyakush/truckhub-server/maintainability)  [![Test Coverage](https://api.codeclimate.com/v1/badges/4e1e8537f40353706e46/test_coverage)](https://codeclimate.com/github/jamesnyakush/truckhub-server/test_coverage)
+
 
 Truckhub Backend is a fully featured Api.
 
