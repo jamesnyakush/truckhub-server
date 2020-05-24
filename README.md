@@ -6,6 +6,7 @@
 Truckhub Backend is a fully featured Api.
 
 ## Api Endpoints
+https://github.com/jamesnyakush/truckhub-server
 | Endpoint | Method | Status |
 | :------: |:------:|:------:|
 | /api/v1/auth/login | Post | Used to authanticate a user |
