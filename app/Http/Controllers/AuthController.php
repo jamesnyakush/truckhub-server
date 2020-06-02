@@ -32,13 +32,14 @@ class AuthController extends Controller
                 'email' => $request->email,
                 'password' => bcrypt($request->password)
             ]);
-
             $user->save();
+
             $savedUser = User::where('email', $request->email)->first();
+
             return response()->json([
                 "status" => true,
                 'message' => 'Successfully created user',
-                "user" => $user,
+                "user" => $savedUser,
             ], Response::HTTP_CREATED);
         }
     }

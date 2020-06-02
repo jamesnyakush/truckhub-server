@@ -42,7 +42,7 @@ class AuthController extends Controller
             return response()->json([
                 "status" => true,
                 'message' => 'Successfully created user',
-                "user" => $user,
+                "user" => $savedUser,
             ], Response::HTTP_CREATED);
         }
 
@@ -74,7 +74,7 @@ class AuthController extends Controller
         if (!Auth::attempt($login_detail)) {
 
             return response()->json([
-                'error' => 'Login Failed. Please check your login detail'
+                'error' => 'Login Failed. Please check your login details'
             ], 401);
         }
 
@@ -87,7 +87,7 @@ class AuthController extends Controller
 
         return response()->json([
             'user' => UserResource::collection(User::with('role')->get()),
-            'access_token' => "Bearer " . $tokenResult->accessToken,
+            'access_token' => "Bearer " . $token->accessToken,
             'token_id'  => $token->id,
 
         ], 200);
