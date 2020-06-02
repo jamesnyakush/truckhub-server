@@ -15,7 +15,7 @@ class AuthController extends Controller
 
     public function signup(Request $request)
     {
-        $validator = Validator::make($request->all(),[
+        $validator = Validator::make($request->all(), [
             'name' => 'required|string',
             'email' => 'required|string|email|unique:users',
             'password' => 'required|string'
@@ -23,23 +23,22 @@ class AuthController extends Controller
 
         if ($validator->fails()) {
             return response()->json([
-                "status"=>false,
-                "message"=>"User was not created",
+                "status" => false,
+                "message" => "User was not created",
             ], Response::HTTP_OK);
-        }
-        else{
+        } else {
             $user = new User([
                 'name' => $request->name,
                 'email' => $request->email,
                 'password' => bcrypt($request->password)
             ]);
-            
+
             $user->save();
             $savedUser = User::where('email', $request->email)->first();
             return response()->json([
-                "status"=>true,
+                "status" => true,
                 'message' => 'Successfully created user',
-                "user"=>$user,
+                "user" => $user,
             ], Response::HTTP_CREATED);
         }
     }
@@ -53,18 +52,18 @@ class AuthController extends Controller
         ]);
         $credentials = request(['email', 'password']);
 
-        if(!Auth::attempt($credentials))
+        if (!Auth::attempt($credentials))
             return response()->json([
-                "status"=> false,
+                "status" => false,
                 'message' => 'Wrong username or password'
             ], 201);
 
         $user = $request->user();
 
         return response()->json([
-            "status"=> true,
-            "message"=>"Login successful",
-            "user"=>$user
+            "status" => true,
+            "message" => "Login successful",
+            "user" => $user
         ], 200);
 
         $tokenResult = $user->createToken('Personal Access Token');
@@ -72,14 +71,14 @@ class AuthController extends Controller
 
         if ($request->remember_me)
             $token->expires_at = Carbon::now()->addWeeks(1);
-            $token->save();
-            return response()->json([
-                'access_token' => $tokenResult->accessToken,
-                'token_type' => 'Bearer',
-                'expires_at' => Carbon::parse(
-                    $tokenResult->token->expires_at
-                )->toDateTimeString()
-            ]);
+        $token->save();
+        return response()->json([
+            'access_token' => $tokenResult->accessToken,
+            'token_type' => 'Bearer',
+            'expires_at' => Carbon::parse(
+                $tokenResult->token->expires_at
+            )->toDateTimeString()
+        ]);
     }
 
     public function logout(Request $request)
