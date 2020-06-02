@@ -30,10 +30,13 @@ Route::group(['prefix' => 'v1'], function () {
     Route::post('/payments', 'Api\v1\payment\PaymentController@store');
 });
 
-Route::group(['prefix' => 'v1/auth'], function () {
+Route::group(['prefix' => 'v1/auth/'], function () {
     //authentication routes
     Route::post('login', 'AuthController@login');
     Route::post('signup', 'AuthController@signup');
+
+    Route::post('register', 'Api\v1\auth\AuthController@register');
+    Route::post('log', 'Api\v1\auth\AuthController@login');
 
     Route::group(['middleware' => 'auth:api'], function () {
         Route::get('logout', 'AuthController@logout');
