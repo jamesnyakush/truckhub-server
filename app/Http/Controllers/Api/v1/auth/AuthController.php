@@ -17,12 +17,14 @@ class AuthController extends Controller
 
         $validator = Validator::make($request->all(), [
             'name' => 'required|string',
+            'role_id' => 'required|number',
             'email' => 'required|string|email|unique:users',
             'password' => 'required|string'
         ]);
 
         $user = new User([
             'name' => $request->name,
+            'role_id' => $request->role_id,
             'email' => $request->email,
             'password' => bcrypt($request->password)
         ]);

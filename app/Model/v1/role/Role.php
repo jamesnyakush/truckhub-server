@@ -6,8 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Role extends Model
 {
+    protected $fillable = [
+        'role_name'
+    ];
+
+    public function users()
+    {
+        $this->hasMany('App\User');
+    }
+
     public function permissions()
     {
-        $this->belongsToMany('App\Model\v1\permission\Permission');
+        $this->hasMany('App\Model\v1\permission\Permission');
     }
 }

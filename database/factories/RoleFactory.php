@@ -7,6 +7,6 @@ use Faker\Generator as Faker;
 
 $factory->define(Role::class, function (Faker $faker) {
     return [
-        //
+        'role_name' => $faker->unique()->randomElement(['Owner', 'Landlord', 'Tenant'])
     ];
 });
